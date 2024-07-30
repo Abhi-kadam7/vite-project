@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+  flex-direction: column;
+}
+
+.App2 {
+  width: 33.5vw;
+  height: 10vh;
+  margin: 5px;
+  border: solid rgb(12, 195, 176);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 45px;
+}
+
+.Rules h2 {
+  text-decoration: underline;
+  padding-top: 16px;
+  text-align: center;
+  color: white;
+}
+
+.container2 {
+  line-height: 40px;
+  font-size: large;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.menu button {
+  width: 200px;
+  height: 25px;
+  font-size: 15px;
+  border: solid rgb(234, 234, 234);
+  border: solid rgb(22, 213, 178);
+  cursor: pointer;
+}
+
+.Quiz {
+  width: 33.5vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border: solid rgb(22, 213, 178);
+  margin-top: 16px;
+  padding-inline: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.Quiz h1 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-style: large;
+}
+
+.otp-container {
+  display: flex;
+  justify-content: center;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  text-align: center;
+}
+
+.btn1, .btn2, .btn3, .btn4 {
+  height: 5vh;
+  width: 15vw;
+  margin-bottom: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 5px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.EndScreen {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.EndScreen h2 {
+  font-size: 40px;
+  font-style: normal;
+  color: aqua;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.EndScreen h3 {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: double underline;
+  border: solid rgb(22, 213, 178);
+  margin-bottom: 16px;
+}
+
+.EndScreen button {
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* mobile Responsive  */
+@media (max-width: 768px) {
+  .App2, .Quiz {
+    width: 80vw;
+  }
+
+  .btn1, .btn2, .btn3, .btn4 {
+    width: 70vw;
+    height: 10vh;
+  }
+
+  .btn-container {
+   
+    gap: 15px;
+  }
+
+  .btn {
+    width: 40vw; /* Adjust the width for smaller buttons */
+    height: 6vh; 
+    font-size: 14px; 
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .Quiz h1 {
+    font-size: 24px;
+  }
+
+  .EndScreen h2 {
+    font-size: 28px;
+  }
+
+  .EndScreen h3 {
+    font-size: 24px;
+  }
+  .EndScreen button {
+    width: 60%;
+    height: 5vh;
+    text-align: center;
+ 
+  }
+}
